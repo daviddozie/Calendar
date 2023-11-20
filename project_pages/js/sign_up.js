@@ -1,25 +1,3 @@
-function onSignIn(googleUser) {
-    // Access user information
-    var profile = googleUser.getBasicProfile();
-    console.log("User is signed in as: " + profile.getName());
-
-    // You can perform actions with the user's information here
-}
-
-gapi.load('auth2', function () {
-    gapi.auth2.init({
-        client_id: '375302140433-kdhdvt8jfmofhdrb7vub2336br5fmsb6.apps.googleusercontent.com', // Replace with your OAuth 2.0 Client ID
-    }).then(function () {
-        // Create the sign-in button
-        gapi.signin2.render('google-signin-button', {
-            'scope': 'profile email', // Specify the scopes you need
-            'theme': 'dark', // Choose 'dark' or 'light' for the button theme
-            'onsuccess': onSignIn // Callback function for successful sign-in
-        });
-    });
-});
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const circles = document.querySelectorAll('.item-circle1, .item-circle2, .item-circle3, .item-circle4, .item-circle5, .item-circle6, .item-circle7, .item-circle8');
     const delayBetweenCircles = 1000;
