@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+.calendar {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-controls {
+    display: flex;
+    align-items: center;
+}
+
+.chevron {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.month-year {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.days div {
+    text-align: center;
+    padding: 10px 2px !important;
+    cursor: pointer;
+}
+
+.current-date {
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-date-info {
+    border: 2px solid #C4C4C4;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.bor {
+    border-right: 2px solid #000;
+    height: 20px;
+    padding-left: 20px;
+}
+
+.selected-date {
+    border: 2px solid #626262;
+    border-radius: 5px;
+}
+
+.day-name {
+    font-weight: bold;
+    padding: 8px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.day-name:nth-child(1) {
+    grid-column-start: 1;
+}
+
+.day-name:nth-child(2) {
+    grid-column-start: 2;
+}
+
+.day-name:nth-child(3) {
+    grid-column-start: 3;
+}
+
+.day-name:nth-child(4) {
+    grid-column-start: 4;
+}
+
+.day-name:nth-child(5) {
+    grid-column-start: 5;
+}
+
+.day-name:nth-child(6) {
+    grid-column-start: 6;
+}
+
+.day-name:nth-child(7) {
+    grid-column-start: 7;
+}
